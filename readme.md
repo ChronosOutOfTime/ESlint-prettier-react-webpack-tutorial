@@ -246,6 +246,12 @@ This tiny option is what allows you to get the magic
 
 So this is it, this project can be used with any framework you like, some changes may be needed in the .eslintrc.js and .babelrc
 
+If you have any suggestions you can:
+- open an issue
+- open a PR
+- fork it and do whatever you want
+- comment on the youtube channel or discord
+
 I hoped i helped anybody with this little demo and if you liked this you can subscribe:
 - on my [youtube channel](https://www.youtube.com/channel/UCOQOna7UFhT2skDitsDXaLA/videos)
 - on my [discord channel](https://discord.com/channels/760625029930156042/760625029930156045)
