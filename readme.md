@@ -85,7 +85,7 @@ in the `index.html` put
 </html>
 ```
 
-while in the main.jsx put 
+while in the `main.jsx` put 
 ```jsx
 import React from "react";
 import ReactDOM from "react-dom";
@@ -100,7 +100,7 @@ ReactDOM.render(<App />, document.querySelector("#root"));
 
 now we just need to configure our webpack to run it when we run **npm start**
 
-so in the webpack.config.js put:
+so in the `webpack.config.js` put:
 ```js
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
@@ -160,7 +160,7 @@ let's install babel deps
 npm install -D @babel/core @babel/preset-env @babel/preset-react babel-eslint babel-loader
 ```
 
-and let's create our .babelrc
+and let's create our `.babelrc`
 
 ```sh
 touch .babelrc
@@ -244,7 +244,7 @@ This tiny option is what allows you to get the magic
 
 ## Conclusions
 
-So this is it, this project can be used with any framework you like, some changes may be needed in the .eslintrc.js and .babelrc
+So this is it, this project can be used with any framework you like, some changes may be needed in the `.eslintrc.js` and `.babelrc`
 
 If you have any suggestions you can:
 - open an issue

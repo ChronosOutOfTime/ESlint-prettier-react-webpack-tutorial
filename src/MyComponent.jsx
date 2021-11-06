@@ -1,8 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const App = () => {
-  return <div> ChronosOutOfTime thanks so much</div>;
+const MyComponent = () => {
+  //javascript things here
+
+  return <div></div>;
 };
 
 ReactDOM.render(<App />, document.querySelector("#root"));
