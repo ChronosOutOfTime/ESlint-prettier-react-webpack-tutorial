@@ -18,24 +18,30 @@ Now let's initialize the project with npm that allows us to manage our dependenc
 ```sh
 npm init -y
 ```
-use -y if you want to skip the wizard and to use default values that can be changes inside package.json
+use -y if you want to skip the wizard and to use default values that can be changes inside `package.json`
 
-Let's now create our github repo so that we can push it later to github by running:
+[optional] Initialize the project if you want to push it to a github repo:
 ```sh
 git init
+touch .gitignore
 ```
+
+**pro tip**: [touch](https://www.geeksforgeeks.org/touch-command-in-linux-with-examples/) can be used to create new files
+
+in the .gitignore let's add the following
+```
+node_modules
+```
+
 let's start creating some folders, the structure is up to you but i suggest to organize things in this way:
 
 ```sh
 mkdir src
 mkdir assets
-mkdir dist
 ```
 
-- **src** is where all the codebase will be places
+- **src** is where all the codebase will be placed
 - **assets** is where you can place images, fonts etc
-- **dist** is where the project will build and where the final bundle will be placed
-
 
 Now you are ready to install all the needed dependencies
 
@@ -149,12 +155,12 @@ module.exports = {
 In my case i chose React since it's widely used, but you can use different frameworks / libs, the purpose of this tutorial is the same.
 
 ```sh
-npm install react react-dom lodash
+npm install react react-dom
 ```
 
 And since we are using react we want to take advantage of writing out components with the **[jsx](https://reactjs.org/docs/introducing-jsx.html)** format hence we need to **[babelize](https://babeljs.io/docs/en/#jsx-and-react)** our code. 
 
-let's install babel deps
+let's install babel dependencies
 
 ```sh
 npm install -D @babel/core @babel/preset-env @babel/preset-react babel-eslint babel-loader
